@@ -1,0 +1,23 @@
+# Wyswietlanie postepu na ekranie (1 = tak, 0 = nie)
+enable_progress 1
+
+# Uzywanie granicy gornej(1 = tak, 0 = nie)
+use_upper_bound 0
+
+# Nazwa pliku wyjsciowego CSV z wynikami
+output_file wyniki_up_off.csv
+
+# --- BADANIA NA INSTANCJACH LOSOWYCH ---
+# Rozmiary instancji do wygenerowania (oddzielone spacja)
+sizes 5 6 7 8
+
+# Ile instancji wygenerowac dla KAZDEGO z powyzszych rozmiarow
+num_instances_per_size 20
+
+# Liczba powtorzen eksperymentu (opcjonalne, w kodzie domyslnie wykonuje raz dla kazdej macierzy)
+num_repetitions 1
+
+# --- BADANIA NA INSTANCJACH Z PLIKOW (TSPLIB) ---
+# Nazwy plikow z macierzami (oddzielone spacja). 
+# Jesli nie chcesz testowac plikow, zostaw te linijke pusta: 
+tsplib_files matrix_6x6.atsp
